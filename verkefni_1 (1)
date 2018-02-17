@@ -1,0 +1,49 @@
+Vefforritun
+verkefni 1
+Kári Ketilsson
+16/01/2018
+-----------------------
+
+1.Ubuntu er stýrikerfi fyrir tölvur. Það er Linux dreifing byggt á Debian arkitektúr. Það er hægt að keyra það á einkatölvum en það er orðir mjög vinsælt hjá netþjónum. Ubuntu keyrir meðal annars á intel, AMD og ARM-undirstaða véla. Ubunutu touch virkar líka á öllum snjallsímum eða tablets.Ubuntu verkefnið er opinberlega skuldbundið sig til meginreglna hugbúnaðarþróunar á opnum hugbúnaði; fólk er hvatt til að nota ókeypis hugbúnað, læra hvernig það virkar, bæta það og dreifa því. 
+
+2.Apache er Http serverinn var gerður af Robert McCool árið 1995 og kom 10 árum á undan NGINX. Apache er mjög gott fyrir dynamic efni sem þýðir að configið er miklu auðveldar NGINX er aðeins flóknara en með sýnar jákvæðu hliðar líka sem dæmi. kóðin hjá NGINX er meira straight forward og er því hægt að skiptu honum upp í hluta og hve interpreter er kallaður upp þegar á honum er þörf, apache getur líka gert það að vissu leiti en öll fuction á undan falla þá úr gildi.
+
+3.
+a) Common Gateway Interface (CGI). Býður upp á staðlaða samskitareglur fyrir netþjónar til að framkvæma hugbúnaðaforrit. Slík forrit eru þekkt sem CGI forskriftir.
+
+b) mod_python er Apache HTTP Server sem samþættir Python forritunarmálið við netþjóninn. Því er ætlað að veita Python tungumálinu leið til að tala við Apache HTTP Server.CGI beiðnir krefjast þess að nýju Python ferli sé svarað hverja vefbeiðni.
+
+c) SCGI eða (Simple Common Gateway Interface) er siðargelur fyrir forrit til að tengah við HTTP netþjóna í stað CGI. Það er svipað og FastCGI en er ætlað að vera auðveldara að framkvæma og leyfir CGI aðgerðir þar sem CGI aðgerðin hefur verulegan leynd. FastCGI í stað þess að búa til nýtt ferli fyrir hverjak beiðni, notar FastCGI viðvarandi ferli til að takast á við röð beiðna. þessar aðferðir eru í eigu FastCGI miðlara, ekki vefþjóninn.
+
+d) mod_wsgi er Apache HTTP server eining af Graham Dumpleton sem veitir WSGI samhæft viðmót fyrir Hýsing Python undirstaða vefur umsókn undir Apache. Eins og í útgáfu 4.5.3 styður mod+_wsgi Python 2 og 3 
+Það er val til mod_python, CGI og FastCGI lausnir fyrir Python-vefur samþættingu. Það var fyrst í boði árið 2007.
+
+e) Gunicorn "Green Unicorn" er Python Web server Gateway Interface (WSGI) HTTP miðlara. Það er fyrirfram verkamaður líka, afhent frá Unicorn verkefni Ruby er. Cunicorn miðlara er sí stórum dráttum samhæft við fjölda ramma á vefnum, einfaldelga útfærð, létt á auðlindum miðlara og tiltölega hratt.
+
+f) uWSGI er hugbúnaður sem stefnir að því að þróa fullan stafla til að byggja upp hýsingarþjónustu. uWSGI er oft notað til að þjóna Python veffortium í tegnslum við vefþjónar eins og Cherokee og Nginx, sem bjóða upp á beinan stuðning við innfæddur siðargelur uWSGI þíns.
+
+4. 
+
+5. pip er notað til að hlaða niður og setja upp pakka beint frá PyPI. PyPI er hýst hjá Python Software Foundation. Það er sérhæft pakki framkvæmdastjóri sem aðeins fjallar um python pakka. líklegur til að fá er notaður til að hlaða niður og setja upp pakka úr Ubuntu-geymslum sem eru hýst með Canonical
+
+6. HTTP 2.0 er tvöfaldur siðareglur sem multiplexes fjölmargir lækir fara yfir einn (venjulega TLS-dulkóðuð) TCP tengingu. Innihald hvers straums er HTTP 1.1 beiðnir og svör, bara kóðuð og pakkað upp á annan hátt. HTTP2 bætir við fjölda aðgerða til að stjórna straumunum, en skilur gömlu merkingarfræði ósnortið.
+
+7. SSH lykill er aðgangsleyfi í SSH samskiptareglunni. Virkni hennar er svipuð og notendanöfn og lykilorð, en lyklar eru fyrst og fremst notaðir til sjálfvirkrar vinnslu og til að framkvæma einföld innskráning af kerfisstjóra og aflgjöfum.
+SSH lyklar gera sjálfvirkni kleift að gera nútíma ský þjónustu og aðra tölvu háð þjónustu möguleg og hagkvæm. Þau bjóða upp á þægindi og betri öryggi þegar það er rétt stjórnað.
+
+8. Það eru nokkrar gerðir að two-factor authentication, hvor með eigin styrkleika og veikleika. Hér er fljótlegt yfirlit. sms staðfestin er visælasta for two-factor authentication stórar síður eins of facebook og google nota þær
+
+Pros: Stærsti kosturinn við SMS-sannprófun er einfaldleiki. Næstum allir eru með afarsíma og ferlið tekur aðeins nokkrar sekúndur.
+
+Con: SMS umfjöllun er ekki alhliða, og ef þú getur ekki fengið merki, getur þú ekki fengið texta Þjófnaður.
+
+9. IPv6 er notað til að tengja alla persónulega viðtakandi til að auðvelda betri mælingar, hraðari venja og almennt betri árangur.
+
+Pros: IPv6 er hraðir og tryggt vegna betri leiðsagnar og beinnar gagnaflæði. Aukin fjöldi heimilisföng gerir hlutina erfiðara fyrir frjálsa tölvusnápur. Bæði öryggi og hraði er mjög batnað með þessu kerfi.
+
+Cons: IPv6 vekur hins vegar áhyggjur af persónuvernd. Þjónustuveitan getur haft ákveðinn IP fyrir hvern einstakling á netinu. Þetta er þægilegt af ýmsum ástæðum. sem dæmi
+a) Sprenging bandbreidd og bannað notendum
+b) Rekja spor einhvers einstakling persónulega
+c) Að veita upplýsingar til stór
+
+10.
